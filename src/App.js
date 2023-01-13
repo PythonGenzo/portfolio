@@ -1,25 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import ButtonAppBar from './AppBar';
+import DrawerAppBar from './menu';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <DrawerAppBar/>
+    {/* <ButtonAppBar/> */}
+
+    <Home/>
+    <Projects/>
+    <About/>
+    <Contact/>
     </div>
+    
+
   );
+}
+
+function Home() {
+
+  return(
+    <div>This is home</div>
+  );
+}
+
+function Projects() {
+
+  return(
+    <div>This is project</div>
+  );
+}
+
+function About() {
+
+  return(
+    <div>This is About</div>
+  );
+}
+
+function Contact() {
+
+  return(
+    <div>This is Contact</div>
+  )
 }
 
 export default App;
